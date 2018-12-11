@@ -1,24 +1,2 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Petflix
+Petflix is a clone implementation of Netflix - A video streaming service that offers a variety of award-winning content. Petflix allows users to search and watch videos (with no commercials!), add videos to a saved list, and rate videos to their heart's desire.
