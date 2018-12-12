@@ -1,32 +1,44 @@
 // Place all the styles related to the api/sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.session-splash-background {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background: image_url("session-form-background-image.jpg");
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+
+}
+.session-form > h2 {
+  color: white;
+  font-size: 30px;
+
+}
+
+::placeholder { 
+  color: rgb(54, 54, 54);
+}
+
 .session-form {
-  background-color: rgba(0, 0, 0, 0.80);
+  background-color: rgba(0, 0, 0, 0.68);
   display: flex;
   flex-direction: column;
-  width: 450px;
-  margin: 25px auto;
+  width: 350px;
+  height: 400px;
+  margin-top: 100px;
   padding: 40px 35px;
   font-family: 'Poppins',
     sans-serif;
   justify-content: center;
   align-content: center;
 
-
 }
 
-.session-form-background {
-  background: image_url("session-form-background-image.jpg");
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: con;
-}
-
-.session-form>h2 {
-  color: white;
-}
 
 .session-form-input {
   position: relative;
@@ -54,4 +66,27 @@
   font-size: large;
   border: none;
 
+}
+
+.session-form-demo-user-submit {
+  background-color: #5e1d1d;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  font-size: large;
+  border: none;
+  margin-top: -20px;
+
+}
+
+.linkToSignUpLogin {
+  color: white;
+}
+
+a {
+  color: white;
 }

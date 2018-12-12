@@ -35,7 +35,7 @@ class SessionForm extends React.Component {
   }
 
   render() {
-    return <div className="session-form-background">
+    return <div className="session-splash-background">
         <form onSubmit={this.handleSubmit} className="session-form">
           <h2>{this.props.formType}</h2>
           {this.renderErrors()}
@@ -51,10 +51,14 @@ class SessionForm extends React.Component {
           <br />
 
           <input type="submit" value={this.props.formType} className="session-form-submit" />
+         
+          <br />
+
+          <input type="submit" value="Demo User" className="session-form-demo-user-submit" />
           
           <br />
           
-          {this.props.navLink}
+         {this.props.navLink}
         </form>
 
       </div>;
