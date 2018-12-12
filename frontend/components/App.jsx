@@ -5,16 +5,11 @@ import SignUpFormContainer from "./session_form/signup_form_container";
 import { Route, Switch } from "react-router-dom";
 
 const App = () => (
-  <div>
-    <h1>Petflix</h1>
-
+  <div >
     <Switch>
         <Route path="/login" component={LogInFormContainer} />
         <Route path="/signup" component={SignUpFormContainer} />
     </Switch>
-
-
-
   </div>
 );
 
