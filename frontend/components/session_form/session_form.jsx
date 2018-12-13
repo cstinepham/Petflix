@@ -25,7 +25,8 @@ class SessionForm extends React.Component {
 
       return e => {
         e.preventDefault();
-        this.props.processForm(user);
+        this.props.processForm(user)
+        .then(this.props.history.push('/browse'));
       } 
 
   }
