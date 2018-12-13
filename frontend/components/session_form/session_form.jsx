@@ -48,8 +48,8 @@ class SessionForm extends React.Component {
     let {formType, navLink} = this.props;
 
     return <div>
-      <div className="splash-logo" />
         <div className="session-splash-background">
+         <div className="session-logo" />
          
           <div className="session-form">
             <h2>{formType}</h2>
