@@ -27,11 +27,18 @@ class SessionForm extends React.Component {
         password: 'password'
       }
 
+
+    if (field ==="demo") {
+      return e => {
+        e.preventDefault();
+        this.props.demoLogin(user)
+      } 
+    } else {
       return e => {
         e.preventDefault();
         this.props.processForm(user)
-        // .then(this.props.history.push('/browse'));
       } 
+    }
   }
 
 
