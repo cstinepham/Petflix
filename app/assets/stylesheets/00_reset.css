@@ -28,3 +28,7 @@ a {
 input:focus {
   outline: none;
 }
+
+body {
+  background: black;
+}

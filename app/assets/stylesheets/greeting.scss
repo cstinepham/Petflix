@@ -1,0 +1,35 @@
+.splash-background {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.splash-card-1 {
+  background-image: linear-gradient(to bottom right, #333333, #191313);
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  height: 330px;
+  margin-top: 100px;
+  padding: 40px 35px;
+  font-family: 'Poppins',
+  sans-serif;
+  justify-content: flex-end;
+}
+
+.splash-card-1-text {
+    color: white;
+    width: 54%;
+    font-size: 40px;
+  
+}
+.splash-card-1-img {
+  content: image_url("splash-card-1.png");
+  position: relative;
+  width: 45%;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  flex: 1;
+
+}
