@@ -30,7 +30,7 @@ class SessionForm extends React.Component {
       return e => {
         e.preventDefault();
         this.props.processForm(user)
-        .then(this.props.history.push('/browse'));
+        // .then(this.props.history.push('/browse'));
       } 
   }
 
@@ -88,7 +88,9 @@ class SessionForm extends React.Component {
               Demo User
             </button>
             <br />
-            {navLink}
+
+            <div onClick={this.props.clearErrors}>{navLink} </div>
+            
           </div>
         </div>
       </div>;
