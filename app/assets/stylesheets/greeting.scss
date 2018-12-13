@@ -2,6 +2,8 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  flex-direction: column;
+
 }
 
 .splash-card-1 {
@@ -10,19 +12,62 @@
   flex-direction: row;
   width: 85%;
   height: 330px;
-  margin-top: 100px;
+  margin-top: 20px;
   padding: 40px 35px;
   font-family: 'Poppins',
   sans-serif;
   justify-content: flex-end;
+  margin-left: 5%;
 }
 
-.splash-card-1-text {
+.splash-card-1-text{
     color: white;
     width: 54%;
     font-size: 40px;
   
 }
+
+.splash-card-1-text > p{
+  color: white;
+  font-size: 17px;
+
+}
+
+
+.signup-button{
+   background-color: #e50914;
+   border-radius: 4px;
+   color: white;
+   padding: 16px 16px;
+   text-decoration: none;
+   cursor: pointer;
+   width: 54%;
+   font-size: large;
+   border: none;
+}
+
+.login-button {
+    background-color: #e50914;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    height: 10%;
+    font-size: large;
+    border: none;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+
+.splash-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
 .splash-card-1-img {
   content: image_url("splash-card-1.png");
   position: relative;
@@ -32,4 +77,12 @@
   margin: 0;
   flex: 1;
 
+}
+
+.splash-logo {
+  content: image_url("petflix-logo1.png");
+  margin-left: 5%;
+  width: 150px;
+  height: 65px;
+  margin-top: 20px;
 }
