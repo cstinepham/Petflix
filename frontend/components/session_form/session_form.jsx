@@ -28,7 +28,6 @@ class SessionForm extends React.Component {
         this.props.processForm(user)
         .then(this.props.history.push('/browse'));
       } 
-
   }
 
   renderErrors() {
@@ -48,30 +47,37 @@ class SessionForm extends React.Component {
     let { email, password } = this.state;
     let {formType, navLink} = this.props;
 
-    return <div className="session-splash-background">
-        <div className="session-form">
-          <h2>{formType}</h2>
-          
-          {this.renderErrors()}
-
-          <br />
-
-          <input type="text" value={email} onChange={this.update("email")} className="session-form-input" placeholder="Email" />
-
-          <br />
-
-          <input type="password" value={password} onChange={this.update("password")} className="session-form-input" placeholder="Password" />
-
-          <br />
-
-         <button className="session-form-submit" onClick={this.handleSubmit("login")}>{formType}</button>  
+    return <div>
+      <div className="splash-logo" />
+        <div className="session-splash-background">
          
-          <br />
-    
-          <button className="session-form-demo-user-button" onClick={this.handleSubmit("demo")} >Demo User</button>
-         {navLink}
-        </div>
+          <div className="session-form">
+            <h2>{formType}</h2>
 
+            {this.renderErrors()}
+
+            <br />
+
+            <input type="text" value={email} onChange={this.update("email")} className="session-form-input" placeholder="Email" />
+
+            <br />
+
+            <input type="password" value={password} onChange={this.update("password")} className="session-form-input" placeholder="Password" />
+
+            <br />
+
+            <button className="session-form-submit" onClick={this.handleSubmit("login")}>
+              {formType}
+            </button>
+
+            <br />
+
+            <button className="session-form-demo-user-button" onClick={this.handleSubmit("demo")}>
+              Demo User
+            </button>
+            {navLink}
+          </div>
+        </div>
       </div>;
   }
 }

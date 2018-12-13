@@ -6,11 +6,12 @@
 .session-splash-background {
   background-repeat: no-repeat;
   background: image_url("session-form-background-image.jpg");
-  height: 1000px;
+  height: 900px;
   width: 100%;
   display: flex;
   justify-content: center;
   background-size: cover;
+  z-index: -1;
 
 }
 .session-form > h2 {
@@ -36,6 +37,7 @@
     sans-serif;
   justify-content: center;
   align-content: center;
+
 
 }
 
@@ -87,10 +89,6 @@
   color: white;
 }
 
-a {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 .errors-list {
   color: white;
