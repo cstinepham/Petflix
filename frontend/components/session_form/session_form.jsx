@@ -35,11 +35,10 @@ class SessionForm extends React.Component {
   }
 
 
-  handleClickLogo() {
-    return e => {
-      e.preventDefault();
-      <Redirect to="/"></Redirect>
-    }
+  handleClickLogo(e) {
+    e.preventDefault();
+    this.props.history.push('/');
+    
   }
 
   renderErrors() {
@@ -61,7 +60,7 @@ class SessionForm extends React.Component {
 
     return <div>
         <div className="session-splash-background">
-         <div className="session-logo" onClick={this.handleClickLogo()}/>
+         <div className="session-logo" onClick={this.handleClickLogo}/>
          
           <div className="session-form">
             <h2>{formType}</h2>
