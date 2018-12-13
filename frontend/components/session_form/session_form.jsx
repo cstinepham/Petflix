@@ -1,3 +1,5 @@
+import { Redirect } from "react-router-dom";
+
 import React from 'react';
 
 class SessionForm extends React.Component {
@@ -7,6 +9,8 @@ class SessionForm extends React.Component {
       email: '',
       password: ''
     };
+
+    this.handleClickLogo = this.handleClickLogo.bind(this);
     
   }
 
@@ -30,6 +34,14 @@ class SessionForm extends React.Component {
       } 
   }
 
+
+  handleClickLogo() {
+    return e => {
+      e.preventDefault();
+      <Redirect to="/"></Redirect>
+    }
+  }
+
   renderErrors() {
     return (
       <ul className="errors-list">
@@ -49,7 +61,7 @@ class SessionForm extends React.Component {
 
     return <div>
         <div className="session-splash-background">
-         <div className="session-logo" />
+         <div className="session-logo" onClick={this.handleClickLogo()}/>
          
           <div className="session-form">
             <h2>{formType}</h2>

@@ -35,7 +35,8 @@
 
 
 .signup-button{
-   background-color: #e50914;
+   //background-color: #e50914;
+   background-image: linear-gradient(to bottom right, #e50914, #7e0107);
    border-radius: 4px;
    color: white;
    padding: 16px 16px;
@@ -47,7 +48,7 @@
 }
 
 .login-button {
-    background-color: #e50914;
+    background-image: linear-gradient(to bottom right, #e50914, #7e0107);
     border-radius: 4px;
     color: white;
     padding: 16px 16px;
@@ -86,4 +87,106 @@
   width: 150px;
   height: 65px;
   margin-top: 20px;
+}
+
+.splash-card-2 {
+  background-image: linear-gradient(to bottom right, #333333, #191313);
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  height: 330px;
+  margin-top: 20px;
+  padding: 40px 35px;
+  font-family: 'Poppins',
+    sans-serif;
+  justify-content: flex-end;
+  margin-left: 5%;
+}
+
+.splash-card-2-img {
+  content: image_url("splash-card-2.png");
+  position: relative;
+  width: 45%;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  flex: 1;
+
+}
+
+.splash-card-2-text {
+  color: white;
+  width: 54%;
+  font-size: 40px;
+
+}
+
+.splash-card-2-text>p {
+  color: white;
+  font-size: 17px;
+
+}
+
+.signup-button-2 {
+   //background-color: #574c4d;
+   background-image: linear-gradient(to bottom right, #333333, #191313);
+   border-radius: 4px;
+   color: white;
+   padding: 16px 16px;
+   text-decoration: none;
+   cursor: pointer;
+   width: 54%;
+   font-size: large;
+   border: none;
+}
+
+
+.splash-card-3 {
+  background-image: linear-gradient(to bottom right, #333333, #191313);
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  height: 330px;
+  margin-top: 20px;
+  padding: 40px 35px;
+  font-family: 'Poppins',
+    sans-serif;
+  justify-content: flex-end;
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+
+
+.splash-card-3-text {
+  color: white;
+  width: 54%;
+  font-size: 40px;
+}
+
+.splash-card-3-text > p {
+  color: white;
+  font-size: 17px;
+}
+
+.signup-button-3 {
+  background-image: linear-gradient(to bottom right, #333333, #191313);
+  border-radius: 4px;
+  color: white;
+  padding: 16px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 54%;
+  font-size: large;
+  border: none;
+}
+
+.splash-card-3-img {
+  content: image_url("splash-card-3.png");
+  position: relative;
+  width: 45%;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  flex: 1;
+
 }
