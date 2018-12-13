@@ -23,7 +23,7 @@ class SessionForm extends React.Component {
   handleSubmit(field) {
     let user = field === "login" ? Object.assign({}, this.state) : 
       {
-        email: 'christine@gmail.com',
+        email: 'demo@email.com',
         password: 'password'
       }
 
