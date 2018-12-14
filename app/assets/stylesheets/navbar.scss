@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  padding: 30px 0px 30px 0px;
+  padding: 15px 0px 10px 0px;
   align-items: center;
   justify-content: space-between;
   background: black;
@@ -14,7 +14,6 @@
 
 .navbar-logo {
   content: image_url("petflix-logo1.png");
-  margin-left: 20px;
   width: 104px;
   height: 49px;
   left: 0px;

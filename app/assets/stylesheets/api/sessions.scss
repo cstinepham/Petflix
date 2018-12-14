@@ -22,7 +22,7 @@
 }
 
 ::placeholder { 
-  color: rgb(54, 54, 54);
+  color: rgb(116, 113, 113);
 }
 
 .session-form {
@@ -32,7 +32,10 @@
   width: 350px;
   height: 400px;
   margin-top: 100px;
-  padding: 40px 35px;
+  padding-top:40px;
+  padding-bottom: 90px;
+  padding-left: 35px;
+  padding-right: 35px;
   font-family: 'Poppins',
     sans-serif;
   justify-content: center;
@@ -43,16 +46,15 @@
 
 
 .session-form-input {
-  position: relative;
-  width: 100%;
-  padding: 12px 15px;
-  margin: 5px 0;
-  box-sizing: border-box;
-  border-radius: 4px;
-  background-color: grey;
-  color: white;
-  font-size: large;
-  border: none;
+    position: relative;
+    width: 100%;
+    padding: 12px 15px;
+    margin: -5px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #494848;
+    color: white;
+    border: none;
 
 }
 
@@ -63,6 +65,7 @@
   padding: 13px 0px 37px 0px;
   text-decoration: none;
   margin: 4px 2px;
+  margin-top: 8px;
   cursor: pointer;
   width: 100%;
   height: 100%;
@@ -88,7 +91,7 @@
 }
 
 .linkToSignUpLogin {
-  color: white;
+  color: rgb(116, 114, 114);
 }
 
 

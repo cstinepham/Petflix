@@ -17,6 +17,9 @@ class NavBar extends React.Component {
           <div className="navbar-comingsoon-link" >
             Coming Soon
           </div>
+        <div className="navbar-comingsoon-link" >
+          My List
+          </div>
 
         </div>
 
