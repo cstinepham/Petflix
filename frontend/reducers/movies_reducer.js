@@ -1,5 +1,5 @@
 import { RECEIVE_ALL_MOVIES, RECEIVE_MOVIE} from '../actions/movie_actions';
-
+import merge from 'lodash/merge';
 
 const moviesReducer = (oldState = {}, action) => {
   Object.freeze(oldState);
@@ -7,7 +7,7 @@ const moviesReducer = (oldState = {}, action) => {
     case RECEIVE_ALL_MOVIES:
       return action.movies;
     case RECEIVE_MOVIE:
-      return action.movie;
+      return merge({}, oldState, {[action.movie.id]: action.movie})
     default:
       return oldState;
   }
