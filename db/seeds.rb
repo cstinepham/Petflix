@@ -7,3 +7,21 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create!(email: 'demo@email.com', username: "Demo", password: "password")
+
+
+Movie.create!(title: "Star Paws", descrption: "description placeholder lala", 
+              rating: "PG-13", year: 1989)
+Movie.create!(title: "50 Shades of Greyhound", descrption: "description placeholder lala", 
+              rating: "PG-13", year: 1989)
+Movie.create!(title: "Jurassic Bark", descrption: "description placeholder lala", 
+              rating: "PG-13", year: 1989)
+Movie.create!(title: "The Good The Bad and The Pugly", descrption: "description placeholder lala", 
+              rating: "PG-13", year: 1989)
+Movie.create!(title: "The Sound of Meowsic", descrption: "description placeholder lala", 
+              rating: "PG-13", year: 1989)
+Movie.create!(title: "The Great Catzby", descrption: "description placeholder lala", 
+              rating: "PG-13", year: 1989)
+Movie.create!(title: "Kitty Kitty Bang Bang", descrption: "description placeholder lala", 
+              rating: "PG-13", year: 1989)
+Movie.create!(title: "Meowcolm X", descrption: "description placeholder lala", 
+              rating: "PG-13", year: 1989)
