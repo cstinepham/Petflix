@@ -1,4 +1,5 @@
 import React from 'react';
+import NavBar from '../navbar/navbar';
 
 class Browse extends React.Component {
 
@@ -16,7 +17,8 @@ class Browse extends React.Component {
   render() {
     return (
     <div>
-      <h1> welcome to netflixs browse page </h1>
+      <NavBar/>
+
         <button onClick={this.handleSubmit}>
           Logout
         </button>

@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0px 20px 0px;
+  align-items: center;
+  justify-content: space-between;
+  background: gray;
+}
+
+.navbar-logo {
+
+  content: image_url("petflix-logo1.png");
+  margin-left: 5%;
+  width: 150px;
+  height: 65px;
+  margin-top: 20px;
+  position: absolute;
+  left: 0px;
+  cursor: pointer;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+
+.navbar-right {
+
+}

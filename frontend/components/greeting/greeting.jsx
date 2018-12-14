@@ -13,7 +13,7 @@ class Greeting extends React.Component {
           </Link>
         </div>
 
-        <div className="splash-card-1">
+        <div className="splash-card">
           <div className="splash-card-1-text">
             <h1>Watch on any device</h1>
             <p>
@@ -27,7 +27,7 @@ class Greeting extends React.Component {
           <div className="splash-card-1-img" />
         </div>
 
-        <div className="splash-card-2">
+        <div className="splash-card">
           <div className="splash-card-2-img" />
           <div className="splash-card-2-text">
             <h1>Download and go</h1>
@@ -40,7 +40,7 @@ class Greeting extends React.Component {
           </div>
         </div>
 
-        <div className="splash-card-3">
+        <div className="splash-card">
           <div className="splash-card-3-text">
             <h1>No pesky contracts</h1>
             <p>Join today, cancel anytime.</p>
