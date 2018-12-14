@@ -1,8 +1,7 @@
-import { RECEIVE_ALL_MOVIES, RECEIVE_MOVIE
-} from '../actions/movie_actions';
+import { RECEIVE_ALL_MOVIES, RECEIVE_MOVIE} from '../actions/movie_actions';
 
 
-const MoviesReducer = (oldState = {}, action) => {
+const moviesReducer = (oldState = {}, action) => {
   Object.freeze(oldState);
   switch (action.type) {
     case RECEIVE_ALL_MOVIES:
@@ -14,4 +13,4 @@ const MoviesReducer = (oldState = {}, action) => {
   }
 };
 
-export default MoviesReducer;
+export default moviesReducer;
