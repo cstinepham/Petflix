@@ -1,30 +1,43 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  padding: 20px 0px 20px 0px;
+  padding: 30px 0px 30px 0px;
   align-items: center;
   justify-content: space-between;
-  background: gray;
+  background: black;
+  margin-right: 30px;
+  margin-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(194, 194, 194);
+
 }
 
 .navbar-logo {
-
   content: image_url("petflix-logo1.png");
-  margin-left: 5%;
-  width: 150px;
-  height: 65px;
-  margin-top: 20px;
-  position: absolute;
+  margin-left: 20px;
+  width: 104px;
+  height: 49px;
   left: 0px;
   cursor: pointer;
 }
 
-.navbar-left {
+.navbar-left, .navbar-right {
   display: flex;
   align-items: center;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: flex-end;
 }
 
 
-.navbar-right {
+.navbar-profile-pic {
+  content: image_url("profile-pic.png");
+  width: 35px;
 
 }

@@ -5,18 +5,25 @@ class NavBar extends React.Component {
 
 
   render() {
-    return (
-      <div className="navbar">
+    return <div className="navbar">
+        <div className="navbar-left">
+          <div className="navbar-logo" />
+          <div className="navbar-home-link">
+            Home
+            </div>
+          <div className="navbar-recentlyadded-link" >
+            Recently Added
+          </div>
+          <div className="navbar-comingsoon-link" >
+            Coming Soon
+          </div>
 
-      <div className="navbar-left">
-      <div className="navbar-logo"/>
-      </div>
+        </div>
 
-
-      <div className="navbar-right">
-      </div>
-      </div>
-    );
+        <div className="navbar-right">
+          <div className="navbar-profile-pic" />
+        </div>
+      </div>;
   }
 }
 
