@@ -1,21 +1,19 @@
-import {
-  connect
-} from "react-redux";
-import React from "react";
+import {connect} from "react-redux";
 import Browse from "./browse";
-import {logout} from "../../actions/session_actions";
+import {fetchMovies} from '../../actions/movie_actions';
 
 
-const mapStateToProps = () => {
+const mapStateToProps = (state) => {
+  let movies = Object.values(state.entities.movies);
   return {
-   
+    movies: movies
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    logout: () => dispatch(logout())
+    fetchMovies: () => dispatch(fetchMovies())
   };
 };
 
-export default connect( mapStateToProps, mapDispatchToProps )(Browse);
+export default connect(mapStateToProps, mapDispatchToProps)(Browse);

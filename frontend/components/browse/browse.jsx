@@ -13,18 +13,30 @@ class Browse extends React.Component {
     this.props.logout();
   }
 
+  componentDidMount() {
+    
+    this.props.fetchMovies();
+
+  }
 
   render() {
+    
+    if (this.props.movies.length === 0) return null;
+    // debugger;
     return (
+
     <div>
       <NavBar/>
-
+      
         <button onClick={this.handleSubmit}>
           Logout
         </button>
+
+        <h1>{this.props.movies[0].title}</h1>
+
     </div>
     );
-  }
+  };
 }
 
 export default Browse;
