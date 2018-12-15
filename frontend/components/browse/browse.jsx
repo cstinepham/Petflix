@@ -33,6 +33,8 @@ class Browse extends React.Component {
         </button>
 
         <h1>{this.props.movies[0].title}</h1>
+        {/* <img src={this.props.movies[0].photo}> */}
+
 
     </div>
     );

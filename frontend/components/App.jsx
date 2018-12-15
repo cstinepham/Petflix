@@ -6,7 +6,7 @@ import GreetingContainer from "./greeting/greeting_container";
 
 import { AuthRoute } from "../util/route_util";
 import { ProtectedRoute } from "../util/route_util";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 const App = () => (
   <div >
@@ -15,6 +15,7 @@ const App = () => (
         <AuthRoute exact path="/signup" component={SignUpFormContainer} />
         <ProtectedRoute path="/browse" component={BrowseContainer} />
         <Route path="/" component={GreetingContainer} />
+        <Redirect to="/" />
       
     </Switch>
   </div>
