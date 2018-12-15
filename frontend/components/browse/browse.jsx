@@ -22,7 +22,7 @@ class Browse extends React.Component {
   render() {
     
     if (this.props.movies.length === 0) return null;
-    // debugger;
+
     return (
 
     <div>

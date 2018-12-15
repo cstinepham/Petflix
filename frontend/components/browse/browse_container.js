@@ -1,6 +1,7 @@
 import {connect} from "react-redux";
 import Browse from "./browse";
 import {fetchMovies} from '../../actions/movie_actions';
+import {logout} from '../../actions/session_actions';
 
 
 const mapStateToProps = (state) => {
@@ -12,7 +13,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchMovies: () => dispatch(fetchMovies())
+    fetchMovies: () => dispatch(fetchMovies()),
+    logout: () => dispatch(logout())
   };
 };
 
