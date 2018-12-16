@@ -1,16 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const MainMovieItem = props => (
+const MainMovieItem = props =>  {
+  if (props.movie === undefined) return null;
+
+  return (
   <div>
-    <h1>{props.movie.title}</h1>
-
     <div className="main-movie">
       <div className="main-movie-thumb" />
-      <button className="play-main-movie">Play</button>
-      <button className="list-main-movie">My List</button>
+      <Link className="play-main-movie" to={`/watch/${props.movie.id}`}>
+        Play
+      </Link>
+      <Link className="list-main-movie" to='/browse'>My List</Link>
     </div>
   </div>
-);
+)};
 
 export default MainMovieItem;
 

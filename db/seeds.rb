@@ -9,12 +9,12 @@ User.destroy_all
 User.create!(email: 'demo@email.com', username: "Demo", password: "password")
 
 Movie.destroy_all
-movie1 = Movie.create!(title: "Pup Fiction", description: "pup fiction description placeholder lala", 
+dog1 = Movie.create!(title: "Pup Fiction", description: "pup fiction description placeholder lala", 
               rating: "PG", year: 1989)
 photo_file = open('https://s3-us-west-1.amazonaws.com/petflix-public/dog1-photo.png')
 video_file = open('https://s3-us-west-1.amazonaws.com/petflix-public/dog1.mp4')
-movie1.photo.attach(io: photo_file, filename: 'movie1-photo.png')
-movie1.video.attach(io: video_file, filename: 'movie1-video.mp4')
+dog1.photo.attach(io: photo_file, filename: 'movie1-photo.png')
+dog1.video.attach(io: video_file, filename: 'movie1-video.mp4')
 
 
 
