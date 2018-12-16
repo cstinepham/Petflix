@@ -5,8 +5,9 @@
 }
 .main-movie-thumb {
 
-  content: url("main-movie-thumb.png");
+  //content: url("main-movie-thumb.png");
 
+  content:url('https://s3-us-west-1.amazonaws.com/petflix-public/main-movie-thumb.png');
   width: 100%;
   height: auto;
 
