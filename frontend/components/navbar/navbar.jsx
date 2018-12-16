@@ -2,13 +2,14 @@ import React from 'react';
 
 
 class NavBar extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       showMenu: false
     }
     this.showMenu = this.showMenu.bind(this);
     this.closeMenu = this.closeMenu.bind(this);
+    this.handleLogout = this.handleLogout.bind(this);
 
   }
 
@@ -31,8 +32,15 @@ class NavBar extends React.Component {
     }
   }
 
+  handleLogout(e) {
+    e.preventDefault()
+    this.props.logout();
+  }
+
 
   render() {
+    
+
     return <div className="navbar">
         <div className="navbar-left">
           <div className="navbar-logo" />
@@ -52,16 +60,12 @@ class NavBar extends React.Component {
         </div>
 
         <div className="navbar-right">
-          <div className="navbar-profile-pic" />
+          <div className="navbar-profile-pic" onClick={this.showMenu} />
           
           
           {/* ========================== */}
           
             <div>
-              <button onClick={this.showMenu}>
-                Show menu
-            </button>
-
               {
                 this.state.showMenu
                   ? (
@@ -71,9 +75,9 @@ class NavBar extends React.Component {
                         this.dropdownMenu = element;
                       }}
                     >
-                      <button> Menu item 1 </button>
-                      <button> Menu item 2 </button>
-                      <button> Menu item 3 </button>
+                      <div onClick={this.handleLogout} className="logout-link">
+                      Logout
+                      </div>   
                     </div>
                   )
                   : (

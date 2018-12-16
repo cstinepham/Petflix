@@ -23,21 +23,12 @@ class Browse extends React.Component {
     
     if (this.props.movies.length === 0) return null;
 
-    return (
-
-    <div>
-      <NavBar/>
-      
-        <button onClick={this.handleSubmit}>
-          Logout
-        </button>
-
+    return <div>
+        <NavBar />
+        <button onClick={this.handleSubmit}>Logout</button>
         <h1>{this.props.movies[0].title}</h1>
-        {/* <img src={this.props.movies[0].photo}> */}
-
-
-    </div>
-    );
+        <img src={this.props.movies[0].photo} />
+      </div>;
   };
 }
 

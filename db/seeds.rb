@@ -9,21 +9,12 @@ User.destroy_all
 User.create!(email: 'demo@email.com', username: "Demo", password: "password")
 
 Movie.destroy_all
-movie1 = Movie.create!(title: "The Sound of Meowsic", description: "sound of meowsic description placeholder lala", 
+movie1 = Movie.create!(title: "Pup Fiction", description: "pup fiction description placeholder lala", 
               rating: "PG", year: 1989)
-photo_file = EzDownload.open('https://s3-us-west-1.amazonaws.com/petflix-dev/catsworldphoto.png')
-video_file = EzDownload.open('https://s3-us-west-1.amazonaws.com/petflix-dev/cats_world_hd_stock_video.mp4')
+photo_file = open('https://s3-us-west-1.amazonaws.com/petflix-public/dog1-photo.png')
+video_file = open('https://s3-us-west-1.amazonaws.com/petflix-public/dog1.mp4')
 movie1.photo.attach(io: photo_file, filename: 'movie1-photo.png')
 movie1.video.attach(io: video_file, filename: 'movie1-video.mp4')
-
-
-movie2 = Movie.create!(title: "Star Paws", description: "star paws description placeholder weeh", 
-              rating: "PG-13", year: 1992)
-photo_file = EzDownload.open('https://s3-us-west-1.amazonaws.com/petflix-dev/catsworldphoto.png')
-video_file = EzDownload.open('https://s3-us-west-1.amazonaws.com/petflix-dev/cats_world_hd_stock_video.mp4')
-movie2.photo.attach(io: photo_file, filename: 'movie2-photo.png')
-movie2.video.attach(io: video_file, filename: 'movie2-video.mp4')
-
 
 
 

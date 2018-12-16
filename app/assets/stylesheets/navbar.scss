@@ -38,5 +38,10 @@
 .navbar-profile-pic {
   content: image_url("profile-pic.png");
   width: 35px;
+  position: absolute;
 
+}
+
+.logout {
+  margin-top:40px;
 }
