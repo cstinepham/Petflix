@@ -1,15 +1,61 @@
 .main-movie {
   height: 70%;
+  position: relative;
+    
 }
 .main-movie-thumb {
 
   content: url("main-movie-thumb.png");
-  max-width: 100%;
-  max-height: 70%;
+
+  width: 100%;
+  height: auto;
 
 }
 
 .main-movie-text {
   color:white;
 
+}
+
+.play-main-movie {
+    position: absolute;
+    top: 60%;
+    left: 12%;
+    // background-color: #555;
+    color: white;
+    font-size: 16px;
+    font-weight: strong;
+    padding: 12px 24px;
+    border-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: Transparent;
+
+  
+}
+
+.list-main-movie {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  // background-color: #555;
+  color: white;
+  font-size: 16px;
+  font-weight: strong;
+  padding: 12px 24px;
+  border-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: Transparent;
+
+
+}
+
+
+.play-main-movie:hover,
+.list-main-movie:hover {
+  background-color: white;
+  color: black;
 }
