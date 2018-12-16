@@ -1,5 +1,7 @@
 import React from 'react';
 import NavBar from '../navbar/navbar';
+import MainMovieItem from "./main_movie_item";
+
 
 class Browse extends React.Component {
 
@@ -26,8 +28,8 @@ class Browse extends React.Component {
     return <div>
         <NavBar />
         <button onClick={this.handleSubmit}>Logout</button>
-        <h1>{this.props.movies[0].title}</h1>
-        <img src={this.props.movies[0].photo} />
+        <MainMovieItem movie={this.props.movies[0]}/>
+        
       </div>;
   };
 }
