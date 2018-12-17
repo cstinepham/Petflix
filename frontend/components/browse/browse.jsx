@@ -37,12 +37,15 @@ class Browse extends React.Component {
       <div className="genre-text">
         Watch it Again
       </div>
+      <MovieGenreList />
       <div className="genre-text">
         Action
         </div>  
+      <MovieGenreList />
       <div className="genre-text">
         Comedy
         </div> 
+      <MovieGenreList />
       </div>;
   };
 }
