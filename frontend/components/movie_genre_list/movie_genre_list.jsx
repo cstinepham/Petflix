@@ -1,4 +1,5 @@
 import React from 'react';
+import MovieGenreItem from './movie_genre_item';
 
 
 class MovieGenreList extends React.Component {
@@ -8,18 +9,28 @@ class MovieGenreList extends React.Component {
   }
   
   componentDidMount() {
-    //this.props.fetchMovies();
+   
   }
 
   render() {
+    let movies = this.props.movies.map(movie => {
+      return(
+        <MovieGenreItem movie={movie} key={movie.title}/>
+      );
+    })
     return (
       <div>
-        {/* ======================================= */}
 
         <div className="contain">
           <div className="row">
             <div className="row__inner">
-              <div className="tile">
+
+
+            {movies}
+
+
+
+              {/* <div className="tile">
                 <div className="tile__media">
                   <img
                     className="tile__img"
@@ -82,12 +93,16 @@ class MovieGenreList extends React.Component {
                 <div className="tile__details">
                   <div className="tile__title">Top Gear</div>
                 </div>
-              </div>
+              </div> */}
+
+
+
+
             </div>
           </div>
         </div>
 
-        {/* ======================================= */}
+      
       </div>
     );
   }

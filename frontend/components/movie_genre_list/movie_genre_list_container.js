@@ -1,19 +1,19 @@
 import {connect} from 'react-redux';
 import MovieGenreList from './movie_genre_list';
 import {fetchMovies} from '../../actions/movie_actions';
+import {selectMoviesByGenre} from '../../reducers/selectors'
 
-
-const mapStateToProps = state => {
+const mapStateToProps = (state, ownProps) => {
   let movies = Object.values(state.entities.movies);
   return ({
-    movies: movies
+    movies: selectMoviesByGenre(movies, ownProps.genre)
   })
 };
 
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchMovies: () => dispatch(fetchMovies())
+    fetchMovies: (genre) => dispatch(fetchMovies(genre))
   };
 };
 

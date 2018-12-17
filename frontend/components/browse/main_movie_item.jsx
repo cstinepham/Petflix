@@ -15,7 +15,8 @@ const MainMovieItem = props =>  {
           + My List
         </Link>
       </div>
-    </div>;};
+    </div>;
+};
 
 export default MainMovieItem;
 

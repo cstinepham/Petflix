@@ -3,11 +3,12 @@ import React from "react";
 const MovieGenreItem = props => (
   <div className="tile">
     <div className="tile__media">
-      <img className="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-1.jpg" alt="" />
+      <img className="tile__img" src={props.movie.photo} alt="" />
     </div>
     <div className="tile__details">
       <div className="tile__title">
-        Top Gear
+        {props.movie.title}
+        {props.movie.description}
       </div>
     </div>
   </div>

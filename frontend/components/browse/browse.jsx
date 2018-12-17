@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from '../navbar/navbar';
 import MainMovieItem from "./main_movie_item";
-import MovieGenreList from '../movie_genre_list/movie_genre_list';
+import MovieGenreListContainer from "../movie_genre_list/movie_genre_list_container";
 
 
 class Browse extends React.Component {
@@ -29,23 +29,15 @@ class Browse extends React.Component {
     return <div>
         <NavBar />
         <button onClick={this.handleSubmit}>Logout</button>
-        <MainMovieItem movie={this.props.movies[0]}/>
-        <div className="genre-text">
-          Popular on Petflix
-        </div>
-        <MovieGenreList/>
-      <div className="genre-text">
-        Watch it Again
-      </div>
-      <MovieGenreList />
-      <div className="genre-text">
-        Action
-        </div>  
-      <MovieGenreList />
-      <div className="genre-text">
-        Comedy
-        </div> 
-      <MovieGenreList />
+        <MainMovieItem movie={this.props.movies[0]} />
+        <div className="genre-text">Ruff Days</div>
+        <MovieGenreListContainer genre={"dog"} />
+        <div className="genre-text">Cattitude</div>
+        <MovieGenreListContainer genre={"cat"} />
+        <div className="genre-text">Action</div>
+      <MovieGenreListContainer />
+        <div className="genre-text">Comedy</div>
+      <MovieGenreListContainer />
       </div>;
   };
 }
