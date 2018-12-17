@@ -18,11 +18,10 @@ class MovieShow extends React.Component {
       <div>
         
         <div className="videoContainer">
-        <video className="movie-show" 
-        src={this.props.movie.video} 
-        autoplay="autoplay"
-        controls/>
-            
+          <video className="movie-show" 
+          src={this.props.movie.video} 
+          autoPlay="autoplay"
+          controls/>
         </div>
       </div>
     );
