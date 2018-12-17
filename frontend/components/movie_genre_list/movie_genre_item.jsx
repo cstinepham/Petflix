@@ -7,7 +7,8 @@ const MovieGenreItem = props => (
     </div>
     <div className="tile__details">
       <div className="tile__title">
-        {props.movie.title}
+        {props.movie.title} 
+        <br></br>
         {props.movie.description}
       </div>
     </div>
