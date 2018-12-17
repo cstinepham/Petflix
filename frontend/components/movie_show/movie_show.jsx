@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from "../navbar/navbar";
+import { Link } from "react-router-dom";
 
 class MovieShow extends React.Component {
 
@@ -18,6 +18,10 @@ class MovieShow extends React.Component {
       <div>
         
         <div className="videoContainer">
+          <Link to='/browse'>
+            <div className="back-button" />
+          </Link>
+          
           <video className="movie-show" 
           src={this.props.movie.video} 
           autoPlay="autoplay"

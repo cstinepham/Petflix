@@ -1,17 +1,25 @@
-.movie-show {
-    position: absolute;
-    min-height: 100%;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    transition: 1s opacity;
-  
-}
-
 .videoContainer {
   position: absolute;
-  top: 0;
-  bottom: 0;
   width: 100%;
   height: 100%;
+}
+
+.movie-show {
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: 1s opacity;
+  
+  }
+  
+
+.back-button {
+  position: absolute;
+  content: image_url("back-button2.png");
+  height: 77px;
+  margin-top: 20px;
+  margin-left: 20px;
+  z-index: 2;
 }
