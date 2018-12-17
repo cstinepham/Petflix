@@ -16,7 +16,7 @@ class MovieShow extends React.Component {
 
     return (
       <div>
-        <NavBar />
+        
         <div className="videoContainer">
         <video className="movie-show" 
         src={this.props.movie.video} 
