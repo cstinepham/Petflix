@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import NavBar from "../navbar/navbar";
 
 const MainMovieItem = props =>  {
   if (props.movie === undefined) return null;

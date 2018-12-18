@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import SearchBarContainer from '../search/search_bar_container';
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -13,6 +14,10 @@ class NavBar extends React.Component {
   }
 
   render() {
+    if (this.props.currentUser === undefined) {
+      return null;
+    }
+
     return <div className="navbar">
         <div className="navbar-left">
 
@@ -35,10 +40,7 @@ class NavBar extends React.Component {
         <div className="navbar-right">
           
         {/* ======= SEARCH ===== */}
-        <form>
-          <input type="search" placeholder="Title, Genre"/>
-        </form>
-
+        <SearchBarContainer/>
           
           {/* ======= DROPDOWN ===== */}
           <div className="dropdown">

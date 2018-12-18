@@ -1,0 +1,43 @@
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+input[type="search"] {
+  background: #ededed00 url(https://s3-us-west-1.amazonaws.com/petflix-public/search-icon.png) no-repeat 9px center;
+
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  width: 0;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  margin-right: 20px;
+  transition: all 0.5s;
+}
+
+input[type="search"]:focus {
+  width: 200px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.308);
+  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.521);
+  -moz-box-shadow: 0 0 5px rgba(255, 255, 255, 0.438);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.479);
+}
+
+input:-moz-placeholder {
+  color: rgb(255, 255, 255);
+}
+
+input::-webkit-input-placeholder {
+  color: rgb(255, 255, 255);
+}

@@ -20,7 +20,6 @@ class Browse extends React.Component {
 
     return <div className="browse-overall">
     
-        <NavBarContainer />
         <MainMovieItem movie={this.props.movies[0]} />
 
         <div className="genre-text">Rufffff Thrillers</div>

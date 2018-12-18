@@ -1,10 +1,11 @@
 import React from 'react';
-import MovieGenreItem from './movie_genre_item';
+import MovieItem from './movie_item';
 
 
 class MovieGenreList extends React.Component {
 
   constructor(props) {
+    
     super(props);
   }
   
@@ -14,9 +15,7 @@ class MovieGenreList extends React.Component {
 
   render() {
     let movies = this.props.movies.map(movie => {
-      return(
-        <MovieGenreItem movie={movie} key={movie.title}/>
-      );
+      return <MovieItem movie={movie} key={movie.title} />;
     })
     return (
       <div>

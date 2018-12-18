@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchContainer from "../navbar/search_container";
+import NavBarContainer from "../navbar/navbar_container";
 
 class Search extends React.Component {
 
@@ -15,7 +15,7 @@ class Search extends React.Component {
 
     return (
       <div>
-        <NavBarContainer />
+        
       </div>
     );
   }

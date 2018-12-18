@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const MovieGenreItem = props => (
+const MovieItem = props => (
   <div className="tile">
     <div className="tile__media">
       <img className="tile__img" src={props.movie.photo} alt="" />
@@ -16,4 +16,4 @@ const MovieGenreItem = props => (
   </div>
 );
 
-export default MovieGenreItem;
+export default MovieItem;
