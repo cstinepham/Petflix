@@ -23,15 +23,26 @@ class NavBar extends React.Component {
         </div>
 
         <div className="navbar-right">
-          <div class="dropdown">
+          
+        {/* ======= SEARCH ===== */}
+        <form>
+          <input type="search" placeholder="Title"/>
+        </form>
+
+          
+          {/* ======= DROPDOWN ===== */}
+          <div className="dropdown">
             <div className="navbar-profile-pic" />
-            <ul class="dropdown-menu">
-              <li> <button>Account</button></li>
-            <li> <button onClick={this.handleSubmit}>Logout</button></li>
+            <ul className="dropdown-menu">
+              <li>
+                <button>Account</button>
+              </li>
+              <li>
+                <button onClick={this.handleSubmit}>Logout</button>
+              </li>
             </ul>
             <div className="dropdown-carrot" />
           </div>
-
           <div />
         </div>
       </div>;
