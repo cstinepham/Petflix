@@ -26,18 +26,18 @@ class Browse extends React.Component {
     
     if (this.props.movies.length === 0) return null;
 
-    return <div>
+    return <div className="browse-overall">
         <NavBar />
         <button onClick={this.handleSubmit}>Logout</button>
         <MainMovieItem movie={this.props.movies[0]} />
-        <div className="genre-text">Ruff Days</div>
+        <div className="genre-text">Ruff Thrillers</div>
         <MovieGenreListContainer genre={"dog"} />
-        <div className="genre-text">Cattitude</div>
+        <div className="genre-text">Catastrophic Dramas</div>
         <MovieGenreListContainer genre={"cat"} />
-        <div className="genre-text">Action</div>
-      <MovieGenreListContainer />
-        <div className="genre-text">Comedy</div>
-      <MovieGenreListContainer />
+        <div className="genre-text">Trending</div>
+        <MovieGenreListContainer genre={"trending"} />
+        <div className="genre-text">Reptilic Romance</div>
+      <MovieGenreListContainer genre={"reptile"} />
       </div>;
   };
 }

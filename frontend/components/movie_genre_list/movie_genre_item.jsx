@@ -8,8 +8,7 @@ const MovieGenreItem = props => (
       <Link to={`/watch/${props.movie.id}`}>
         <div className="tile__details">
           <div className="tile__title">
-            {props.movie.title} 
-            <br></br>
+            <h2>{props.movie.title} </h2>
             {props.movie.description}
           </div>
         </div>
