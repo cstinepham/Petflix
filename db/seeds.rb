@@ -42,6 +42,20 @@ dog4.photo.attach(io: photo_file4, filename: 'dog-movie4-photo.png')
 dog4.video.attach(io: video_file4, filename: 'dog-movie4-video.mp4')
 
 
+dog5 = Movie.create!(title: "Mission Impawsible", description: "Will they ever get to the bottom of the hole?", 
+              rating: "PG", year: 2015, genre: "dog")
+photo_file5 = open('https://s3-us-west-1.amazonaws.com/petflix-public/dog5-thumb.png')
+video_file5 = open('https://s3-us-west-1.amazonaws.com/petflix-public/dog5.mp4')
+dog5.photo.attach(io: photo_file5, filename: 'dog-movie5-photo.png')
+dog5.video.attach(io: video_file5, filename: 'dog-movie5-video.mp4')
+
+dog6 = Movie.create!(title: "The Whole Canine Yards", description: "The lives of 9 dogs turned upside down.", 
+              rating: "PG-13", year: 2018, genre: "dog")
+photo_file6 = open('https://s3-us-west-1.amazonaws.com/petflix-public/dog6-thumb.png')
+video_file6 = open('https://s3-us-west-1.amazonaws.com/petflix-public/dog6.mp4')
+dog6.photo.attach(io: photo_file6, filename: 'dog-movie6-photo.png')
+dog6.video.attach(io: video_file6, filename: 'dog-movie6-video.mp4')
+
 # #####################        CATS         #####################################
 
 cat1 = Movie.create!(title: "The Great Catzby", description: "Nick Cattaway becomes curious about his neighbor after being invited to one of his famous parties.", 
@@ -72,6 +86,20 @@ video_file4 = open('https://s3-us-west-1.amazonaws.com/petflix-public/cat4.mp4')
 cat4.photo.attach(io: photo_file4, filename: 'cat-movie4-photo.png')
 cat4.video.attach(io: video_file4, filename: 'cat-movie4-video.mp4')
 
+cat5 = Movie.create!(title: "Lord of the Strings", description: "A young Bilbo Catbins seeks to conquer the one and only string.", 
+              rating: "R", year: 2000, genre: "cat")
+photo_file5 = open('https://s3-us-west-1.amazonaws.com/petflix-public/cat5-thumb.png')
+video_file5 = open('https://s3-us-west-1.amazonaws.com/petflix-public/cat5.mp4')
+cat5.photo.attach(io: photo_file5, filename: 'cat-movie5-photo.png')
+cat5.video.attach(io: video_file5, filename: 'cat-movie5-video.mp4')
+
+
+cat6 = Movie.create!(title: "Prince of Purrsia", description: "A snobby prince gets a sense of reality when someone unexpected visits.", 
+              rating: "R", year: 2000, genre: "cat")
+photo_file6 = open('https://s3-us-west-1.amazonaws.com/petflix-public/cat6-thumb.png')
+video_file6 = open('https://s3-us-west-1.amazonaws.com/petflix-public/cat6.mp4')
+cat6.photo.attach(io: photo_file6, filename: 'cat-movie6-photo.png')
+cat6.video.attach(io: video_file6, filename: 'cat-movie6-video.mp4')
 # #####################        REPTILES         #####################################
 
 reptile1 = Movie.create!(title: "Sssilent Night", description: "A journey of a sneaky hunt for the right meal.", 
@@ -102,7 +130,12 @@ video_file4 = open('https://s3-us-west-1.amazonaws.com/petflix-public/reptile4.m
 reptile4.photo.attach(io: photo_file4, filename: 'reptile-movie4-photo.png')
 reptile4.video.attach(io: video_file4, filename: 'reptile-movie4-video.mp4')
 
-
+reptile5 = Movie.create!(title: "Finding Squirt", description: "Crush, a turtle, sets out to find his missing son Squirt.", 
+              rating: "PG-13", year: 2018, genre: "reptile")
+photo_file5 = open('https://s3-us-west-1.amazonaws.com/petflix-public/reptile5-thumb.png')
+video_file5 = open('https://s3-us-west-1.amazonaws.com/petflix-public/reptile5.mp4')
+reptile5.photo.attach(io: photo_file5, filename: 'reptile-movie5-photo.png')
+reptile5.video.attach(io: video_file5, filename: 'reptile-movie5-video.mp4')
 #####################        TRENDING NOW         #####################################
 
 trending1 = Movie.create!(title: "Seal of Approval", description: "Navy special operation forces go East to save a lost pup.", 
@@ -133,3 +166,17 @@ photo_file4 = open('https://s3-us-west-1.amazonaws.com/petflix-public/misc4-thum
 video_file4 = open('https://s3-us-west-1.amazonaws.com/petflix-public/misc4.mp4')
 trending4.photo.attach(io: photo_file4, filename: 'misc-movie4-photo.png')
 trending4.video.attach(io: video_file4, filename: 'misc-movie4-video.mp4')
+
+trending5 = Movie.create!(title: "Big Sebastian", description: "Pawnee's undiscovered sweetheart comes back.", 
+              rating: "G", year: 2010, genre: "trending")
+photo_file5 = open('https://s3-us-west-1.amazonaws.com/petflix-public/misc5-thumb.png')
+video_file5 = open('https://s3-us-west-1.amazonaws.com/petflix-public/misc5.mp4')
+trending5.photo.attach(io: photo_file5, filename: 'misc-movie5-photo.png')
+trending5.video.attach(io: video_file5, filename: 'misc-movie5-video.mp4')
+
+trending6 = Movie.create!(title: "Airplane?", description: "Bernie dreams of becoming an airplane.", 
+              rating: "G", year: 2010, genre: "trending")
+photo_file6 = open('https://s3-us-west-1.amazonaws.com/petflix-public/misc6-thumb.png')
+video_file6 = open('https://s3-us-west-1.amazonaws.com/petflix-public/misc6.mp4')
+trending6.photo.attach(io: photo_file6, filename: 'misc-movie6-photo.png')
+trending6.video.attach(io: video_file6, filename: 'misc-movie6-video.mp4')
