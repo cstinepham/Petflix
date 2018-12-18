@@ -1,7 +1,7 @@
 import React from 'react';
-import NavBarContainer from "../navbar/navbar_container";
+import SearchContainer from "../navbar/search_container";
 
-class List extends React.Component {
+class Search extends React.Component {
 
   constructor(props) {
     super(props);
@@ -12,13 +12,13 @@ class List extends React.Component {
   }
 
   render() {
-  
+
     return (
       <div>
-        <NavBarContainer/>
+        <NavBarContainer />
       </div>
     );
   }
 }
 
-export default List;
+export default Search;

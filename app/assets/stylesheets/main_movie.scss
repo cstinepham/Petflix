@@ -2,16 +2,16 @@
   height: 600px;
   display:flex;
   margin-bottom:15px;  
- 
+  
+
 }
 
 
 
 .main-movie-thumb {
-  content:url('https://s3-us-west-1.amazonaws.com/petflix-public/main-movie-thumb.gif'); 
+content:url('https://s3-us-west-1.amazonaws.com/petflix-public/main-movie-thumb.gif'); 
 width: 100%;
 height: 100%;
-/* top: 26px; */
 background-size: cover;
 margin-top: -24px;
 

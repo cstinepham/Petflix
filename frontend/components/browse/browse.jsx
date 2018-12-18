@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../navbar/navbar';
+import NavBarContainer from '../navbar/navbar_container';
 import MainMovieItem from "./main_movie_item";
 import MovieGenreListContainer from "../movie_genre_list/movie_genre_list_container";
 
@@ -8,18 +8,10 @@ class Browse extends React.Component {
 
   constructor(props) {
     super(props);
-    this.handleSubmit = this.handleSubmit.bind(this)
-  }
-
-  handleSubmit(e) {
-    e.preventDefault();
-    this.props.logout();
   }
 
   componentDidMount() {
-    
     this.props.fetchMovies();
-
   }
 
   render() {
@@ -28,11 +20,10 @@ class Browse extends React.Component {
 
     return <div className="browse-overall">
     
-        <NavBar />
-        <button onClick={this.handleSubmit}>Logout</button>
+        <NavBarContainer />
         <MainMovieItem movie={this.props.movies[0]} />
 
-        <div className="genre-text">Ruff Thrillers</div>
+        <div className="genre-text">Rufffff Thrillers</div>
         <MovieGenreListContainer genre={"dog"} />
         <div className="genre-text">Catastrophic Dramas</div>
         <MovieGenreListContainer genre={"cat"} />

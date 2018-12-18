@@ -7,7 +7,10 @@ const MainMovieItem = props =>  {
 
   return <div>
       <div className="main-movie">
+        
         <div className="main-movie-thumb" />
+        
+   
         <div className="pup-fiction-text">Pup Fiction</div>
         <Link className="play-main-movie" to={`/watch/${props.movie.id}`}>
           ▶ Play
