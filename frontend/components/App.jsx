@@ -22,7 +22,7 @@ const App = () => (
         <ProtectedRoute path="/watch/:movieId" component={MovieShowContainer} />
         <ProtectedRoute path="/list" component={ListContainer} />
         <ProtectedRoute path="/search" component={SearchResultsContainer} />
-        <Route path="/" component={GreetingContainer} />
+        <AuthRoute path="/" component={GreetingContainer} />
         <Redirect to="/" />
       
     </Switch>

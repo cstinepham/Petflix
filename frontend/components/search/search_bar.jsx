@@ -12,12 +12,9 @@ class SearchBar extends React.Component {
   }
 
   componentDidMount() {
-    // debugger;
   }
 
   componentDidUpdate(ownProps) {
-
-  
     if(ownProps.history.location.pathname === '/browse' && this.state.count > 0){
       this.setState({
         queryString: '',
@@ -27,8 +24,6 @@ class SearchBar extends React.Component {
   }
 
   update(field) {
-
-
 
     return e => this.setState({
       [field]: e.target.value

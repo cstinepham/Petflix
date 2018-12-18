@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBarContainer from "../navbar/navbar_container";
+
 
 class List extends React.Component {
 
@@ -15,7 +15,7 @@ class List extends React.Component {
   
     return (
       <div>
-        <NavBarContainer/>
+        
       </div>
     );
   }
