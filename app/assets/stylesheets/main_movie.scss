@@ -2,35 +2,37 @@
   height: 600px;
   display:flex;
   margin-bottom:15px;  
-
+ 
 }
 
 
 
 .main-movie-thumb {
-  content:url('https://s3-us-west-1.amazonaws.com/petflix-public/main-movie-thumb.gif');
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
+  content:url('https://s3-us-west-1.amazonaws.com/petflix-public/main-movie-thumb.gif'); 
+width: 100%;
+height: 100%;
+/* top: 26px; */
+background-size: cover;
+margin-top: -24px;
+
 
 }
 
 
 .pup-fiction-text {
-    position: absolute;
-    top: 285px;
-    left: 10%;
-    color: white;
-    font-size: 84px;
-    padding: 12px 24px;
-    font-family: 'Abril Fatface';
+  position: absolute;
+  top: 200px;
+  left: 10%;
+  color: white;
+  font-size: 84px;
+  padding: 12px 24px;
+  font-family: 'Abril Fatface';
   
 }
 
 .play-main-movie {
     position: absolute;
-    top: 435px;
+    top: 350px;
     left: 12%;
     color: white;
     font-size: 16px;
@@ -46,7 +48,7 @@
 
 .list-main-movie {
   position: absolute;
-  top: 435px;
+  top: 350px;
   left: 20%;
   color: white;
   font-size: 16px;
