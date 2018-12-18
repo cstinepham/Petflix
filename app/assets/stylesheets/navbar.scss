@@ -11,6 +11,20 @@
     width: 95%;
 }
 
+.navbar-left div {
+   -o-transition:.5s;
+   -ms-transition:.5s;
+   -moz-transition:.5s;
+   -webkit-transition:.5s;
+   
+   transition:.5s;
+}
+
+.navbar-left div:hover {
+  color: rgb(134, 134, 134);
+  cursor: pointer;
+}
+
 .navbar-logo {
   content: image_url("petflix-logo1.png");
   width: 104px;
@@ -96,6 +110,7 @@
 .dropdown button:hover {
   text-decoration: underline;
   cursor: pointer;
+  
 }
 
 
