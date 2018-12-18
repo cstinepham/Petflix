@@ -28,14 +28,12 @@ class SearchBar extends React.Component {
     return e => this.setState({
       [field]: e.target.value
     },
-    
-    () => {
-     
-        this.props.history.push(`/search?movie=${this.state.queryString}`);
-        this.setState({
-          count: 1
-        })
-      
+        () => {
+        
+            this.props.history.push(`/search?movie=${this.state.queryString}`);
+            this.setState({
+              count: 1
+            })
     }
     
     );
