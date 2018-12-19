@@ -1,15 +1,12 @@
 # == Schema Information
 #
-# Table name: movies
+# Table name: list_items
 #
-#  id          :bigint(8)        not null, primary key
-#  title       :string           not null
-#  description :text             not null
-#  rating      :string           not null
-#  year        :integer          not null
-#  created_at  :datetime         not null
-#  updated_at  :datetime         not null
-#  genre       :string
+#  id         :bigint(8)        not null, primary key
+#  list_id    :integer          not null
+#  movie_id   :integer          not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
