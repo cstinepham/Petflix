@@ -6,7 +6,7 @@ const ListTile = props => {
   
   return(
   <div>
-    <Link to={`/list/${props.list.id}`}>
+    <Link to={`/lists/${props.list.id}`}>
       <div className="list">
         <div className="list-title">{props.list.title}</div>
       </div>

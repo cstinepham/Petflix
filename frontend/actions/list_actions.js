@@ -14,7 +14,7 @@ export const receiveList = (list) => ({
   list
 });
 
-export const fetchList = id => dispatch => (
+export const fetchList = (id) => dispatch => (
   ListAPIUtil.fetchList(id)
   .then(list => dispatch(receiveList(list)))
 );

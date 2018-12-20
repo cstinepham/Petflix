@@ -36,7 +36,7 @@ class NavBar extends React.Component {
           <div className="navbar-recentlyadded-link">Recently Added</div>
           <div className="navbar-comingsoon-link">Coming Soon</div>
 
-        <Link to={`/list`}>
+        <Link to={`/lists`}>
           <div className="navbar-comingsoon-link">My Lists</div>
         </Link>
         </div>

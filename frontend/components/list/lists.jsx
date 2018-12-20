@@ -55,11 +55,7 @@ class Lists extends React.Component {
                 <input className="title-input" type="text" placeholder="ex. Holiday Favorites" onChange={this.update("title")} value={this.state.title} />
                 <br />
               
-              {/* <label className="modal-content-btn" htmlFor="modal-toggle">
-                  <input  type="submit" value="Submit" />
-                </label> */}
-
-                {/* <input type="submit" className="modal-content-btn" htmlFor="modal-toggle"/> */}
+             
                 <button type="submit" className="modal-content-btn-outer">
 
                 <label className="modal-content-btn" htmlFor="modal-toggle">

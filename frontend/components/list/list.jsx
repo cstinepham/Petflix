@@ -1,20 +1,22 @@
 import React from 'react';
-import { Redirect } from "react-router-dom";
+
 
 class List extends React.Component {
 
   constructor(props) {
     super(props);
-   
+  }
+
+  componentDidMount() {
+    this.props.fetchList(this.props.match.params.listId);
   }
 
 
-
   render() {
-
+    
     return (
       <div>
-
+        HI
       </div>
     );
   }
