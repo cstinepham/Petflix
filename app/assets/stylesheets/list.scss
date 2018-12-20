@@ -1,20 +1,35 @@
 .grid-container {
   display: inline-grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-gap: 30px;
   margin-top: 160px;
   margin-left: 40px;
   margin-bottom: 100px;
-  align-content: center;
+
 }
 
 
 .list {
-    width: 300px;
-    height: 300px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(78, 78, 78); 
+  width: 300px;
+  height: 300px;
+  border: none;
+  text-align: center;
+  background: rgba(100, 100, 100, 0.274);
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 5px 5px -5px #333;
+  transition: background 0.3s ease-in;
+
+
+  &:hover {
+    background: rgba(221, 54, 54, 0.801);
+  }
+  
+}
+
+.list-title {
+  font-size: 20px;
+  padding-top:120px;
 }
 
 .my-lists {
@@ -26,6 +41,7 @@
   position: absolute;
   margin-top: 80px;
 }
+
 
 
 
@@ -51,15 +67,15 @@
 
 
 .modal-container {
-  //margin: 60px auto;
-  padding-top: 0px;
-  position: relative;
-  width: 160px;
+    padding-top: 0px;
+    position: relative;
+    width: 300px;
+    
 
 
   .modal-btn {
 
-    border-color: white;
+    border-color: rgb(94, 94, 94);
     width: 300px;
     border-style: dashed;
     height: 300px;

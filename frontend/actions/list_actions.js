@@ -1,6 +1,6 @@
 import * as ListAPIUtil from '../util/lists_api_util';
 
-export const RECEIVE_ALL_LISTS = 'RECEIVE_ALL_LIST';
+export const RECEIVE_ALL_LISTS = 'RECEIVE_ALL_LISTS';
 export const RECEIVE_LIST = 'RECEIVE_LIST';
 
 export const receiveLists = (lists) => ({
