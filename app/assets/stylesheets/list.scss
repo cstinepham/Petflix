@@ -59,21 +59,18 @@
 
   .modal-btn {
 
+    border-color: white;
     width: 300px;
+    border-style: dashed;
     height: 300px;
-    
     background: rgba(255, 50, 50, 0.651);
-    
-
-    line-height:12;
+    line-height: 12;
     display: block;
     margin: 0 auto;
     color: #fff;
-
-    
-    background: rgb(156, 156, 156);
+    background: #cbcbcb30;
     font-size: 22px;
-    border: 0;
+    border-width: 1px;
     
     cursor: pointer;
     text-align: center;
