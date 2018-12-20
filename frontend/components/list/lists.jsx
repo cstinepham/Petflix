@@ -5,21 +5,9 @@ class Lists extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      show: false
-    }
-
-    this.showModal = this.showModal.bind(this);
-    this.hideModal = this.hideModal.bind(this);
   }
 
-  showModal () {
-    this.setState({ show: true });
-  }
 
-  hideModal () {
-    this.setState({ show: false });
-  }
 
   componentDidMount() {}
 
@@ -27,13 +15,28 @@ class Lists extends React.Component {
     return <div>
         <div className="my-lists">My Lists</div>
         <div className="grid-container">
-          <div className="add-list">
-            <button className="add-list-button" onClick={this.showModal}>+</button>
+
+        <div className="modal-container">
+          <input id="modal-toggle" type="checkbox" />
+          <label className="modal-btn" htmlFor="modal-toggle">+</label>
+          <label className="modal-backdrop" htmlFor="modal-toggle"></label>
+          <div className="modal-content">
+            <label className="modal-close" htmlFor="modal-toggle">&#x2715;</label>
+            <h2>Create List</h2>
+            <p>Hello from inside the modal!</p>
+            <label className="modal-content-btn" htmlFor="modal-toggle">OK</label>
           </div>
+        </div>  
+
+          
           <div className="list" />
           <div className="list" />
           <div className="list" />
         </div>
+
+
+
+
       </div>;
   }
 }

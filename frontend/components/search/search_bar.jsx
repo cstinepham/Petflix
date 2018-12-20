@@ -45,7 +45,7 @@ class SearchBar extends React.Component {
     return (
       <div>
         <form>
-          <input type="search" placeholder="Title, Genre" value={this.state.queryString} onChange={this.update("queryString")}/>
+          <input className="search-input" type="search" placeholder="Title, Genre" value={this.state.queryString} onChange={this.update("queryString")}/>
         </form>
       </div>
     );
