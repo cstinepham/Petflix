@@ -9,7 +9,7 @@
 
 
 .main-movie-thumb {
-content:url('https://s3-us-west-1.amazonaws.com/petflix-public/main-movie-thumb.gif'); 
+content:url('https://media.giphy.com/media/3CWYA9shrI6oyGMFiK/giphy.gif');
 width: 100%;
 height: 100%;
 background-size: cover;
@@ -20,20 +20,30 @@ margin-top: -24px;
 
 
 .pup-fiction-text {
-  position: absolute;
-  top: 200px;
-  left: 10%;
-  color: white;
-  font-size: 84px;
-  padding: 12px 24px;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    color: white;
+    font-size: 84px;
+    padding: 12px 24px;
+    
   font-family: 'Abril Fatface';
   
+}
+
+.a-petflix-original {
+position: absolute;
+top: 175px;
+font-size: 40px;
+left: 50px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
 }
 
 .play-main-movie {
     position: absolute;
     top: 350px;
-    left: 12%;
+    left: 170px;
     color: white;
     font-size: 16px;
     font-weight: strong;
@@ -49,7 +59,7 @@ margin-top: -24px;
 .list-main-movie {
   position: absolute;
   top: 350px;
-  left: 20%;
+  left: 300px;
   color: white;
   font-size: 16px;
   font-weight: strong;

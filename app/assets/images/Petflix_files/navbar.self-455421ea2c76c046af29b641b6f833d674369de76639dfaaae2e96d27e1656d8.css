@@ -1,0 +1,121 @@
+/* line 1, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/navbar.scss */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 0px 10px 10px;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  position: absolute;
+  width: 95%;
+}
+
+/* line 15, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/navbar.scss */
+.navbar-left div {
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/* line 24, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/navbar.scss */
+.navbar-left div:hover {
+  color: #868686;
+  cursor: pointer;
+}
+
+/* line 29, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/navbar.scss */
+.navbar-logo {
+  content: url(/assets/petflix-logo1-8a9ca829e986b1cc9e6dc44f2971961e7a6993207f04b45de6dcdd0bb9cc2f02.png);
+  width: 104px;
+  height: 49px;
+  left: 0px;
+  cursor: pointer;
+}
+
+/* line 37, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/navbar.scss */
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+}
+
+/* line 44, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/navbar.scss */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+/* line 53, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/navbar.scss */
+.navbar-profile-pic {
+  content: url(/assets/profile-pic-d7b0b22e96f537a5b735ac66b0269820c28feb6dfdb2d0af427ded1c8912316e.png);
+  width: 35px;
+  height: 35px;
+  margin-right: 10%;
+}
+
+/* line 60, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/navbar.scss */
+.dropdown-carrot {
+  content: url(/assets/dropdown-cdfbf5d9828022314ecfb969f06eee0d8e745fa8a9c43f97be3a3fd2516cee49.png);
+  width: 30px;
+  height: 30px;
+}
+
+/* line 66, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/navbar.scss */
+.logout-link {
+  margin-top: 40px;
+  position: absolute;
+  border-color: white;
+}
+
+/* line 75, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/navbar.scss */
+.dropdown {
+  position: relative;
+  display: flex;
+}
+
+/* line 80, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/navbar.scss */
+.dropdown:hover {
+  cursor: pointer;
+}
+
+/* line 84, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/navbar.scss */
+.dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  display: none;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+/* line 94, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/navbar.scss */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/** List Item Styles **/
+/* line 99, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/navbar.scss */
+.dropdown button {
+  display: block;
+  padding: 0.2em 0.8em;
+  text-decoration: none;
+  background: black;
+  color: #ffffff;
+  min-width: 100px;
+  font-size: 14px;
+}
+
+/** List Item Hover Styles **/
+/* line 111, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/navbar.scss */
+.dropdown button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

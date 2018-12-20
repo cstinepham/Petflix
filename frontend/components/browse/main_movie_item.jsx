@@ -10,6 +10,7 @@ const MainMovieItem = props =>  {
         <div className="main-movie-thumb" />
         
    
+      <div className="a-petflix-original">A <strong>PETFLIX</strong> ORIGINAL</div>
         <div className="pup-fiction-text">Pup Fiction</div>
         <Link className="play-main-movie" to={`/watch/${props.movie.id}`}>
           ▶ Play

@@ -1,0 +1,12 @@
+/* line 1, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/browse.scss */
+.genre-text {
+  font-size: 1.4vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-left: 48px;
+}
+
+/* line 8, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/browse.scss */
+.browse-overall {
+  background-image: linear-gradient(to bottom right, black, #363636);
+}

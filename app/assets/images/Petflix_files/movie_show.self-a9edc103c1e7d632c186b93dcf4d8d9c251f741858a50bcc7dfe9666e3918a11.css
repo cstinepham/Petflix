@@ -1,0 +1,28 @@
+/* line 1, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/movie_show.scss */
+.videoContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: black;
+}
+
+/* line 9, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/movie_show.scss */
+.movie-show {
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+/* line 20, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/movie_show.scss */
+.back-button {
+  position: absolute;
+  content: url(/assets/back-button2-a5d9c4b9260d70b0161238288f413d2798dcda5ad389af73f4615a14e8366f74.png);
+  height: 77px;
+  margin-top: 20px;
+  margin-left: 20px;
+  z-index: 2;
+}

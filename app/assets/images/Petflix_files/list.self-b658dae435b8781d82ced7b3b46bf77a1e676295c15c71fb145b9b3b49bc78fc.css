@@ -1,0 +1,56 @@
+/* line 1, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/list.scss */
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+  margin-top: 160px;
+  margin-left: 40px;
+  margin-bottom: 100px;
+  align-content: center;
+}
+
+/* line 11, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/list.scss */
+.add-list {
+  width: 300px;
+  height: 300px;
+  border-width: 1px;
+  border-style: dashed;
+  background: rgba(177, 177, 177, 0.651);
+  border-color: #4e4e4e;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+/* line 23, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/list.scss */
+.add-list-button {
+  border-style: dashed;
+  width: 300px;
+  height: 300px;
+  font-size: 40px;
+  background: transparent;
+}
+
+/* line 35, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/list.scss */
+.add-list:hover,
+.add-list-button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* line 41, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/list.scss */
+.list {
+  width: 300px;
+  height: 300px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #4e4e4e;
+}
+
+/* line 49, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/list.scss */
+.my-lists {
+  margin-left: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  position: absolute;
+  margin-top: 80px;
+}

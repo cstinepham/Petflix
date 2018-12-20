@@ -1,0 +1,167 @@
+/* line 1, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.splash-background {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* line 9, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.splash-card {
+  background-image: linear-gradient(to bottom right, #333333, #191313);
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  height: 395px;
+  margin-top: 20px;
+  padding: 40px 35px;
+  font-family: 'Poppins', sans-serif;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+
+/* line 23, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.splash-card-1-text {
+  color: white;
+  width: 54%;
+  font-size: 40px;
+}
+
+/* line 30, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.splash-card-1-text > p {
+  color: white;
+  font-size: 17px;
+}
+
+/* line 37, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.signup-button {
+  background-image: linear-gradient(to bottom right, #e50914, #7e0107);
+  border-radius: 4px;
+  color: white;
+  padding: 16px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 54%;
+  font-size: large;
+  border: none;
+}
+
+/* line 50, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.login-button {
+  background-image: linear-gradient(to bottom right, #e50914, #7e0107);
+  border-radius: 4px;
+  color: white;
+  padding: 16px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  height: 10%;
+  font-size: large;
+  border: none;
+  margin-right: 5%;
+  margin-top: 20px;
+  font: helvetica;
+}
+
+/* line 66, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.splash-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* line 73, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.splash-card-1-img {
+  content: url(/assets/splash-card-1-d8fcb0e78ff2061df0ac5a1c0e2782b277321296011735f95048cf9db65d548e.png);
+  position: relative;
+  width: 45%;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  flex: 1;
+  max-width: 516px;
+}
+
+/* line 85, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.splash-logo {
+  content: url(/assets/petflix-logo1-8a9ca829e986b1cc9e6dc44f2971961e7a6993207f04b45de6dcdd0bb9cc2f02.png);
+  margin-left: 5%;
+  width: 150px;
+  height: 65px;
+  margin-top: 20px;
+}
+
+/* line 93, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.splash-card-2-img {
+  content: url(/assets/splash-card-2-edad155a3cd0b421bb742228a66266486671197d0df1af578c863eda84cf913c.png);
+  position: relative;
+  width: 45%;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  flex: 1;
+  max-width: 516px;
+}
+
+/* line 105, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.splash-card-2-text {
+  color: white;
+  width: 54%;
+  font-size: 40px;
+}
+
+/* line 112, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.splash-card-2-text > p {
+  color: white;
+  font-size: 17px;
+}
+
+/* line 118, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.signup-button-2 {
+  background-image: linear-gradient(to bottom right, #333333, #191313);
+  border-radius: 4px;
+  color: white;
+  padding: 16px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 54%;
+  font-size: large;
+  border: none;
+}
+
+/* line 132, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.splash-card-3-text {
+  color: white;
+  width: 54%;
+  font-size: 40px;
+}
+
+/* line 138, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.splash-card-3-text > p {
+  color: white;
+  font-size: 17px;
+}
+
+/* line 143, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.signup-button-3 {
+  background-image: linear-gradient(to bottom right, #333333, #191313);
+  border-radius: 4px;
+  color: white;
+  padding: 16px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 54%;
+  font-size: large;
+  border: none;
+}
+
+/* line 155, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/greeting.scss */
+.splash-card-3-img {
+  content: url(/assets/splash-card-3-073edc2ab82d958c9f8a746397f4a66cb794d058265fb84a1a15f7d8ca921791.png);
+  position: relative;
+  width: 45%;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  flex: 1;
+  max-width: 516px;
+}

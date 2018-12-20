@@ -1,0 +1,51 @@
+/* line 1, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/search.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+/* line 8, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/search.scss */
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+/* line 13, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/search.scss */
+input[type="search"] {
+  background: #ededed00 url(https://s3-us-west-1.amazonaws.com/petflix-public/search-icon.png) no-repeat 9px center;
+  border: none;
+  padding: 9px 10px 9px 32px;
+  width: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  margin-right: 20px;
+  transition: all 0.5s;
+}
+
+/* line 28, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/search.scss */
+input[type="search"]:focus {
+  width: 200px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.308);
+  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.521);
+  -moz-box-shadow: 0 0 5px rgba(255, 255, 255, 0.438);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.479);
+  border-color: white;
+}
+
+/* line 39, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/search.scss */
+input:-moz-placeholder {
+  color: #777777;
+}
+
+/* line 43, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/search.scss */
+input::-webkit-input-placeholder {
+  color: #777777;
+}
+
+/* line 47, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/search.scss */
+.movie-search-results {
+  padding: 100px;
+}

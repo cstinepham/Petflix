@@ -1,0 +1,110 @@
+/* line 6, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/api/sessions.scss */
+.session-splash-background {
+  background-repeat: no-repeat;
+  background: url(/assets/session-form-background-image-8ec4f617e5d7f6eced3fdfffe1140301903bafc148b9dfc9b73cbd82467fd4b7.jpg);
+  height: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 17, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/api/sessions.scss */
+.session-form > h2 {
+  color: white;
+  font-size: 30px;
+}
+
+/* line 24, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/api/sessions.scss */
+::placeholder {
+  color: #747171;
+}
+
+/* line 28, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/api/sessions.scss */
+.session-form {
+  background-color: rgba(0, 0, 0, 0.68);
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 400px;
+  margin-top: 100px;
+  padding-top: 40px;
+  padding-bottom: 90px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  align-content: center;
+}
+
+/* line 48, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/api/sessions.scss */
+.session-form-input {
+  position: relative;
+  width: 100%;
+  padding: 12px 15px;
+  margin: -5px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #494848;
+  color: white;
+  border: none;
+}
+
+/* line 61, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/api/sessions.scss */
+.session-form-submit-button {
+  background-color: #e50914;
+  border-radius: 4px;
+  color: white;
+  padding: 13px 0px 37px 0px;
+  text-decoration: none;
+  margin: 4px 2px;
+  margin-top: 8px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  font-size: large;
+  border: none;
+  transition: all 0.5s;
+}
+
+/* line 78, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/api/sessions.scss */
+.session-form-demo-user-button {
+  background-color: #5e1d1d;
+  border-radius: 4px;
+  color: white;
+  padding: 13px 0px 37px 0px;
+  text-decoration: none;
+  margin: 8px 2px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  font-size: large;
+  border: none;
+  margin-top: -20px;
+}
+
+/* line 98, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/api/sessions.scss */
+.linkToSignUpLogin {
+  color: #747272;
+}
+
+/* line 103, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/api/sessions.scss */
+.errors-list {
+  color: white;
+  padding: 20px;
+  font-size: small;
+}
+
+/* line 109, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/api/sessions.scss */
+.session-logo {
+  content: url(/assets/petflix-logo1-8a9ca829e986b1cc9e6dc44f2971961e7a6993207f04b45de6dcdd0bb9cc2f02.png);
+  margin-left: 5%;
+  width: 150px;
+  height: 65px;
+  margin-top: 20px;
+  background: transparent;
+  position: absolute;
+  left: 0px;
+  cursor: pointer;
+}

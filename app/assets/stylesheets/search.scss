@@ -13,12 +13,9 @@ input::-webkit-search-cancel-button {
 input[type="search"] {
   background: #ededed00 url(https://s3-us-west-1.amazonaws.com/petflix-public/search-icon.png) no-repeat 9px center;
 
-  border: solid 1px #ccc;
+  border: none;
   padding: 9px 10px 9px 32px;
   width: 0;
-  -webkit-border-radius: 10em;
-  -moz-border-radius: 10em;
-  border-radius: 10em;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   margin-right: 20px;
@@ -32,14 +29,16 @@ input[type="search"]:focus {
   -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.521);
   -moz-box-shadow: 0 0 5px rgba(255, 255, 255, 0.438);
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.479);
+  border-color: white;
+  
 }
 
 input:-moz-placeholder {
-  color: rgb(255, 255, 255);
+  color: rgb(119, 119, 119);
 }
 
 input::-webkit-input-placeholder {
-  color: rgb(255, 255, 255);
+  color: rgb(119, 119, 119);
 }
 
 .movie-search-results {

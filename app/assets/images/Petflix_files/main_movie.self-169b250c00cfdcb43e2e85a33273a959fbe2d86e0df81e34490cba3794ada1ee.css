@@ -1,0 +1,65 @@
+/* line 1, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/main_movie.scss */
+.main-movie {
+  height: 600px;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+/* line 11, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/main_movie.scss */
+.main-movie-thumb {
+  content: url("https://s3-us-west-1.amazonaws.com/petflix-public/main-movie-thumb.gif");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  margin-top: -24px;
+}
+
+/* line 22, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/main_movie.scss */
+.pup-fiction-text {
+  position: absolute;
+  top: 200px;
+  left: 10%;
+  color: white;
+  font-size: 84px;
+  padding: 12px 24px;
+  font-family: 'Abril Fatface';
+}
+
+/* line 33, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/main_movie.scss */
+.play-main-movie {
+  position: absolute;
+  top: 350px;
+  left: 12%;
+  color: white;
+  font-size: 16px;
+  font-weight: strong;
+  padding: 12px 24px;
+  border-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.37);
+}
+
+/* line 49, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/main_movie.scss */
+.list-main-movie {
+  position: absolute;
+  top: 350px;
+  left: 20%;
+  color: white;
+  font-size: 16px;
+  font-weight: strong;
+  padding: 12px 24px;
+  border-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.37);
+}
+
+/* line 67, /Users/Christine/AppAcademy/FullStack/Petflix/app/assets/stylesheets/main_movie.scss */
+.play-main-movie:hover,
+.list-main-movie:hover {
+  background-color: white;
+  color: black;
+}
