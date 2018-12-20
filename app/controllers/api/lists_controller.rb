@@ -14,12 +14,12 @@ class Api::ListsController < ApplicationController
 
 
   def show
-    @list = List.find_by(user_id: params[:user_id])
+    @list = List.find_by(user_id: params[:user_id], title: params[:title])
   end
 
 
   private
   def list_params
-    params.require(:list).permit(:user_id)
+    params.require(:list).permit(:user_id, :title)
   end
 end
