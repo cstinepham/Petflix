@@ -1,14 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Redirect } from "react-router-dom";
 
-const List = props => (
-  <Link to={`/list/${props.list.id}`}>
-    <div className="list">
+class List extends React.Component {
 
-      <div className="list-title">{props.list.title}</div>
-          
-    </div>
-  </Link>
-);
+  constructor(props) {
+    super(props);
+   
+  }
+
+
+
+  render() {
+
+    return (
+      <div>
+
+      </div>
+    );
+  }
+}
 
 export default List;

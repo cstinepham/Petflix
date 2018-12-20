@@ -5,8 +5,8 @@ import { fetchLists, createList } from '../../actions/list_actions';
 const mapStateToProps = (state) => {
   let lists = Object.values(state.entities.lists);
   return ({
-    lists: lists
-    
+    lists: lists,
+    currentUser: state.session.id
   });
 };
 
