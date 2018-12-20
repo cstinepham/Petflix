@@ -37,6 +37,17 @@
 //   box-sizing: border-box;
 // }
 
+.title-input {
+  position: relative;
+  width: 100%;
+  padding: 12px 15px;
+  margin: -5px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #b6b6b667;
+  color: rgb(0, 0, 0);
+  border: none;
+}
 
 
 .modal-container {
@@ -45,12 +56,13 @@
   position: relative;
   width: 160px;
 
+
   .modal-btn {
 
     width: 300px;
     height: 300px;
     
-    background: rgba(177, 177, 177, 0.651);
+    background: rgba(255, 50, 50, 0.651);
     
 
     line-height:12;
@@ -84,6 +96,12 @@
     transition: opacity 0.2s ease-in;
   }
 
+  .create-list {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:15px;
+  }
+
   .modal-close {
     color: #aaa;
     position: absolute;
@@ -103,25 +121,41 @@
     }
   }
 
+
   .modal-content-btn {
-    position: absolute;
-    text-align: center;
-    cursor: pointer;
-    bottom: 20px;
-    right: 30px;
+    // position: absolute;
+    // text-align: center;
+    // cursor: pointer;
+    // bottom: 20px;
+    // right: 30px;
     
-    background: rgb(122, 122, 122);
-    color: #fff;
-    width: 50px;
-    border-radius: 2px;
-    font-size: 14px;
-    height: 32px;
-    padding-top: 9px;
-    font-weight: normal;
+    // background: rgb(122, 122, 122);
+    // color: #fff;
+    // width: 100%;
+    // border-radius: 2px;
+    // font-size: 14px;
+    // height: 32px;
+    // padding-top: 9px;
+    // font-weight: normal;
+
+
+      position: relative;
+      width: 100%;
+      padding: 12px 15px;
+      margin-top:15px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      background-color: #b6b6b667;
+      color: rgb(0, 0, 0);
+      border: none;
+
+
+
 
     &:hover {
       color: #fff;
-      background: #903636;
+      background: rgba(221, 54, 54, 0.801);
+      cursor: pointer;
     }
   }
 
@@ -148,7 +182,7 @@
       background-color: #fff;
       max-width: 400px;
       width: 400px;
-      height: 280px;
+      height: 160px;
       padding: 10px 30px;
       position: fixed;
       left: calc(50% - 200px);
