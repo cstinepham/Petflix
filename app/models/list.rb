@@ -16,7 +16,7 @@ class List < ApplicationRecord
   class_name: :ListItem
 
   has_many :movies,
-  through :list_items,
+  through: :list_items,
   source: :movie
   
   belongs_to :user,
