@@ -10,9 +10,20 @@
 #
 
 class List < ApplicationRecord
+  
+  has_many :list_items,
+  foreign_key: :list_id,
+  class_name: :ListItem
+
+  has_many :movies,
+  through :list_items,
+  source: :movie
+  
   belongs_to :user,
   foreign_key: :user_id,
   class_name: :User
+
+  
   
   
 end

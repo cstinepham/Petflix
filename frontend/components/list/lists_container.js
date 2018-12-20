@@ -1,16 +1,16 @@
 import {
   connect
 } from 'react-redux';
-import List from './list';
+import Lists from './lists';
 
 const mapStateToProps = () => {
-  return {
-
-  };
+  return ({
+    
+  });
 };
 
 const mapDispatchToProps = dispatch => ({
 
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(List);
+export default connect(mapStateToProps, mapDispatchToProps)(Lists);

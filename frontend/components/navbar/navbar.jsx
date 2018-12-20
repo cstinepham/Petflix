@@ -14,12 +14,15 @@ class NavBar extends React.Component {
   }
 
   render() {
+
+
     
     if (this.props.currentUser === undefined) {
       return null;
     }
 
     return <div className="navbar">
+        <div className="bg transition"></div>
         <div className="navbar-left">
 
         <Link to={`/browse`}>
@@ -34,7 +37,7 @@ class NavBar extends React.Component {
           <div className="navbar-comingsoon-link">Coming Soon</div>
 
         <Link to={`/list`}>
-          <div className="navbar-comingsoon-link">My List</div>
+          <div className="navbar-comingsoon-link">My Lists</div>
         </Link>
         </div>
 

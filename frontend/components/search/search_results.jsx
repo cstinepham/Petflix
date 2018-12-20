@@ -13,6 +13,8 @@ class Search extends React.Component {
 
   getQueryString() {
     return this.props.history.location.search.split("=")[1];
+
+
   }
 
   getMovies() {

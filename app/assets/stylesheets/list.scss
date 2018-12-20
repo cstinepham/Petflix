@@ -1,0 +1,56 @@
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+  margin-top: 160px;
+  margin-left: 40px;
+  align-content: center;
+}
+
+.add-list {
+    width: 300px;
+    height: 300px;
+    border-width: 1px;
+    border-style: dashed;
+    background: rgba(177, 177, 177, 0.651);
+    border-color: rgb(78, 78, 78); 
+    opacity: 0.5;
+    transition: 0.3s;
+    
+}
+
+.add-list-button{
+  
+  border-radius: 7px;
+  width: 300px;
+  height: 300px;
+  font-size: 40px;
+  background: transparent;
+  
+  
+}
+
+
+.add-list:hover,
+.add-list-button:hover{
+  opacity: 1;
+  cursor:pointer;
+}
+
+.list {
+    width: 300px;
+    height: 300px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(78, 78, 78); 
+}
+
+.my-lists {
+  margin-left: 40px;
+  font-family: Arial,
+  Helvetica,
+  sans-serif;
+  font-size: 40px;
+  position: absolute;
+  margin-top: 80px;
+}
