@@ -10,16 +10,16 @@
 
 
 .list {
-  width: 300px;
-  height: 300px;
-  border: none;
-  text-align: center;
-  background: rgba(100, 100, 100, 0.274);
-  cursor: pointer;
-  text-align: center;
-  box-shadow: 0 5px 5px -5px #333;
-  transition: background 0.3s ease-in;
-
+    width: 300px;
+    height: 290px;
+    border: none;
+    text-align: center;
+    background: rgba(100, 100, 100, 0.274);
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 5px 5px -5px #333;
+    padding-top: 10px;
+    transition: background 0.3s ease-in;
 
   &:hover {
     background: rgba(221, 54, 54, 0.801);
@@ -27,9 +27,16 @@
   
 }
 
+
+.list-actions-button {
+  content: image_url("ellipses.png");
+  width: 30px;
+  margin-left: 15px;
+}
+
 .list-title {
   font-size: 20px;
-  padding-top:120px;
+  padding-top:100px;
 }
 
 .list-title-show-page {
@@ -67,8 +74,10 @@
   margin-left: 20px;
   z-index: 2;
   cursor:pointer;
-
 }
+
+
+
 
 // =========MODAL==========================
 

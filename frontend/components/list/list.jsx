@@ -27,9 +27,11 @@ class List extends React.Component {
         <Link to="/lists">
           <div className="back-button-list" />
         </Link>
+
         <div className="list-title-show-page">{this.props.list.title}</div>
-      <div className="row__inner_search">
-        <div className="list-movies">{movies}</div>
+
+        <div className="row__inner_search">
+          <div className="list-movies">{movies}</div>
         </div>
       </div>;
   }
