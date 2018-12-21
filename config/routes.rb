@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy, :show]
     resources :movies, only:[:index, :show]
     resources :list_items, only: [:create, :destroy, :show, :index]
-    resources :lists, only: [:create, :show, :index]
+    resources :lists, only: [:create, :show, :index, :destroy]
   end
 end
 

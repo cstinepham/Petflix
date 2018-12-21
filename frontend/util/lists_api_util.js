@@ -24,3 +24,9 @@ export const createList = (list) => (
 
 
 
+export const deleteList = (listId) => (
+  $.ajax({
+    method: 'DELETE',
+    url: `api/lists/${listId}`
+  })
+);

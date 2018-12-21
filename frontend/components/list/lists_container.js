@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Lists from './lists';
-import { fetchLists, createList } from '../../actions/list_actions';
+import { fetchLists, createList, deleteList } from '../../actions/list_actions';
 
 const mapStateToProps = (state) => {
   let lists = Object.values(state.entities.lists);
@@ -12,7 +12,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => ({
   fetchLists: () => dispatch(fetchLists()),
-  createList: (list) => dispatch(createList(list))
+  createList: (list) => dispatch(createList(list)),
+  deleteList: (listId) => dispatch(deleteList(listId))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Lists);

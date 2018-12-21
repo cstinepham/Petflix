@@ -18,6 +18,15 @@ class Api::ListsController < ApplicationController
     @list = List.find(params[:id])
   end
 
+  def destroy
+    @list = List.find(params[:id])
+
+    if @list.destroy
+      render :show
+    else
+      render json: @list.errors.full_messages, status: 422
+    end
+  end
 
   private
   def list_params

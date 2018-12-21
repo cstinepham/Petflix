@@ -1,6 +1,6 @@
 import React from 'react';
 import ListTile from "./list_tile";
-import { LOGOUT_CURRENT_USER, logoutCurrentUser } from '../../actions/session_actions';
+
 
 class Lists extends React.Component {
   constructor(props) {
@@ -27,13 +27,14 @@ class Lists extends React.Component {
 
   componentDidMount() {
     this.props.fetchLists();
+
   }
 
   render() {
 
     
     let lists = this.props.lists.map(list => {
-      return <ListTile list={list} key={list.title} />;
+      return <ListTile list={list} key={list.title} deleteList={this.props.deleteList} />;
     });
 
 
