@@ -13,7 +13,8 @@ const mapStateToProps = (state, ownProps) => {
   let listItems = selectListItemsByList(listItemsArray, list);
   let movies = Object.values(state.entities.movies);
   return ({
-    movies: selectMoviesByListItems(movies, listItems)
+    movies: selectMoviesByListItems(movies, listItems),
+    list
   });
 };
 

@@ -19,10 +19,14 @@ class List extends React.Component {
     let movies = this.props.movies.map(movie => {
       return <MovieItem movie={movie} key={movie.title} />;
     })
+
+    if (this.props.list === undefined) return null;
+
     return (
       <div>
+        <div className="my-lists">{this.props.list.title}</div>
         <div className="list-movies">
-        {movies}
+          {movies}
         </div>
       </div>
     );
