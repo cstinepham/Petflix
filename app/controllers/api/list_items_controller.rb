@@ -1,6 +1,6 @@
 class Api::ListItemsController < ApplicationController
   def index
-    @listItems = ListItem.find_by(params[:list_item][:list_id])
+    @listItems = ListItem.all
   end
 
   def create
@@ -14,7 +14,7 @@ class Api::ListItemsController < ApplicationController
 
 
   def show
-    @listItem = ListItem.find_by(id: params[:id])
+    @listItem = ListItem.find(params[:id])
     if @listItem
       render :show
     else

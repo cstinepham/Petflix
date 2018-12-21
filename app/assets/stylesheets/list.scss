@@ -43,15 +43,13 @@
 }
 
 
-
+.list-movies {
+  position:absolute;
+  margin-top: 100px;
+  margin-left: 40px;
+}
 
 // =========MODAL==========================
-
-// *,
-// *:before,
-// *:after {
-//   box-sizing: border-box;
-// }
 
 .title-input {
   position: relative;
@@ -162,7 +160,7 @@
     color: black;
     margin-left: -14px;
     border: none;
-    
+
     &:hover {
       color: #fff;
       background: rgba(221, 54, 54, 0.801);
