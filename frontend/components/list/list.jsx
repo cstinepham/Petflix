@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieItem from '../movie_genre_list/movie_item';
+import { Link } from "react-router-dom";
 
 class List extends React.Component {
 
@@ -24,6 +25,9 @@ class List extends React.Component {
 
     return (
       <div>
+        <Link to='/lists'>
+          <div className="back-button-list" />
+        </Link>
         <div className="my-lists">{this.props.list.title}</div>
         <div className="list-movies">
           {movies}

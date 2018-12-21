@@ -33,13 +33,13 @@
 }
 
 .my-lists {
-  margin-left: 40px;
+  margin-left: 115px;
   font-family: Arial,
   Helvetica,
   sans-serif;
   font-size: 40px;
   position: absolute;
-  margin-top: 80px;
+  margin-top: 88px;
 }
 
 
@@ -47,6 +47,17 @@
   position:absolute;
   margin-top: 200px;
   margin-left: 40px;
+}
+
+.back-button-list {
+  position: absolute;
+  content: image_url("back-button2.png");
+  height: 77px;
+  margin-top: 80px;
+  margin-left: 20px;
+  z-index: 2;
+  cursor:pointer;
+
 }
 
 // =========MODAL==========================
