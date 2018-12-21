@@ -8,14 +8,12 @@ const ListTile = props => {
       <Link to={`/lists/${props.list.id}`}>
         
         <div className="list">
-          {/* ========== */}
+          {/* ====dropdown====== */}
           <div className="dropdown">
             <div className="list-actions-button" />
             <ul className="dropdown-menu">
               <li>
-                <button>
-                  Delete
-                </button>
+                <button>Delete</button>
               </li>
               <li>
                 <button>Edit</button>
