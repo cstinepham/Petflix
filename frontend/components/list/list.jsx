@@ -23,17 +23,13 @@ class List extends React.Component {
 
     if (this.props.list === undefined) return null;
 
-    return (
-      <div>
-        <Link to='/lists'>
+    return <div>
+        <Link to="/lists">
           <div className="back-button-list" />
         </Link>
-        <div className="my-lists">{this.props.list.title}</div>
-        <div className="list-movies">
-          {movies}
-        </div>
-      </div>
-    );
+        <div className="list-title-show-page">{this.props.list.title}</div>
+        <div className="list-movies">{movies}</div>
+      </div>;
   }
 }
 
