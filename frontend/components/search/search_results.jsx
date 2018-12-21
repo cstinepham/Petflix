@@ -37,13 +37,13 @@ class Search extends React.Component {
     
     if (this.props.movies.length === 0) return null;
 
-    return (
-      <div>
-        <div className='movie-search-results'>
-        {this.getMovies()}
+    return <div>
+        <div className="movie-search-results">
+          <div className="row__inner_search ">
+            {this.getMovies()}
+          </div>
         </div>
-      </div>
-    );
+      </div>;
   }
 }
 

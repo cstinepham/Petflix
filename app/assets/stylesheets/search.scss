@@ -48,3 +48,31 @@ input::-webkit-input-placeholder {
 .search-input {
   padding-left: 10px;
 }
+
+.row__inner_search {
+  transition: 450ms -webkit-transform;
+  transition: 450ms transform;
+  transition: 450ms transform,
+    450ms -webkit-transform;
+  font-size: 0;
+  
+  margin-top: 39px;
+  margin-left: 48px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.row__inner_search:hover {
+  -webkit-transform: translate3d(-62.5px, 0, 0);
+  transform: translate3d(-62.5px, 0, 0);
+}
+
+.row__inner_search:hover .tile {
+  opacity: 0.3;
+}
+
+.row__inner_search:hover .tile:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  opacity: 1;
+}

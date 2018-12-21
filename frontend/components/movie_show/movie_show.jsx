@@ -24,7 +24,7 @@ class MovieShow extends React.Component {
           
           <video className="movie-show" 
           src={this.props.movie.video} 
-          autoPlay="autoplay"
+          autoPlay
           controls/>
         </div>
       </div>
