@@ -21,6 +21,8 @@ class List extends React.Component {
       return <MovieItem movie={movie} key={movie.title} />;
     })
 
+
+
     if (this.props.list === undefined) return null;
 
     return <div>

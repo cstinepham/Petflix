@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieItem from './movie_item';
+import { userInfo } from 'os';
 
 
 class MovieGenreList extends React.Component {
@@ -23,6 +24,7 @@ class MovieGenreList extends React.Component {
         <div className="contain">
           <div className="row">
             <div className="row__inner">
+          
             {movies}
             </div>
           </div>
