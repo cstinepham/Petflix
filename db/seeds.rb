@@ -185,3 +185,4 @@ listItem2 = ListItem.create!(list_id: list1.id, movie_id: trending1.id)
 listItem3 = ListItem.create!(list_id: list1.id, movie_id: cat5.id)
 listItem4 = ListItem.create!(list_id: list2.id, movie_id: cat3.id)
 listItem5 = ListItem.create!(list_id: list2.id, movie_id: reptile1.id)
+ 
