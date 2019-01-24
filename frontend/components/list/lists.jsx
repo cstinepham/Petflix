@@ -25,13 +25,14 @@ class Lists extends React.Component {
     
   }
 
+
   componentDidMount() {
     this.props.fetchLists();
 
   }
 
   render() {
-
+    if(!this.props.lists) return null;
     
     let lists = this.props.lists.map(list => {
       return <ListTile list={list} key={list.title} deleteList={this.props.deleteList} />;
