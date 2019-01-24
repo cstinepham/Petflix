@@ -6,6 +6,8 @@ class ListTile extends React.Component {
   handleDeleteList() {
     return (e) => {
       this.props.deleteList(this.props.list.id);
+      e.preventDefault();
+
     }
   }
 
@@ -14,13 +16,14 @@ class ListTile extends React.Component {
       return <div>
       <Link to={`/lists/${this.props.list.id}`}>
 
-        <div className="list">
+        <div className="list" >
+
           {/* ====dropdown====== */}
           <div className="dropdown">
             <div className="list-actions-button" />
             <ul className="dropdown-menu">
               <li>
-                <button onClick={ this.handleDeleteList()}>Delete</button>
+                <button onClick={ this.handleDeleteList() } >Delete</button>
               </li>
               <li>
                 <button>Edit</button>
