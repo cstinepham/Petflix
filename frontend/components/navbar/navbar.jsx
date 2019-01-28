@@ -34,7 +34,7 @@ class NavBar extends React.Component {
         </Link>
 
         <Link to={`/lists`}>
-          <div className="navbar-comingsoon-link">My Lists</div>
+          <div className="navbar-lists-link">My Lists</div>
         </Link>
         </div>
 
@@ -47,9 +47,6 @@ class NavBar extends React.Component {
           <div className="dropdown">
             <div className="navbar-profile-pic" />
             <ul className="dropdown-menu">
-              <li>
-                <button>Account</button>
-              </li>
               <li>
                 <button onClick={this.handleSubmit}>Logout</button>
               </li>
